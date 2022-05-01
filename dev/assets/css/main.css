@@ -6,6 +6,14 @@
     box-sizing: border-box;
     font-family: "LiberationSans-Regular", Arial, Helvetica;
 }
+p{
+    font-size: 13px;
+    line-height: 1.7;
+}
+h4,
+h3{
+    letter-spacing: 1px;
+}
 body{
     margin: 0;
     padding: 0;
@@ -45,6 +53,7 @@ header p:first-child{
     font-size: 50px;
     font-weight: 600;
     margin: 0 0 10px;
+    letter-spacing: 2px;
 }
 header p:last-child{
     font-size: 13px;
@@ -54,7 +63,7 @@ header p:last-child{
     width: 100%;
     display: flex;
     flex-direction: column;
-    padding: 72.5px 10% 20px;
+    padding: 72.5px 10% 50px;
     background: linear-gradient(#aed8ff,#fdeaf4);
 }
 .products,
@@ -77,10 +86,6 @@ header p:last-child{
 .products article .product_icon{
     width: 30px;
 }
-p{
-    font-size: 13px;
-    line-height: 1.7;
-}
 .about_us{
     background-color: #fff;
     padding: 30px 20px;
@@ -91,4 +96,84 @@ p{
 }
 .about_us article{
     flex: 2;
+}
+#special_menu{
+    width: 100%;
+    background-color: #e8f2e4;
+    padding: 50px 10%;
+    position: relative;
+}
+#special_menu img{
+    width: 65%;
+}
+.special_menu{
+    width: 30%;
+    min-width: 350px;
+    border: solid 5px #aed8ff;
+    padding: 20px;
+    background-color: #fff;
+    position: absolute;
+    right: 10%;
+    top: calc(50% - 99px);
+}
+.special_menu h3{
+    color: #aed8ff;
+    margin: 0;
+}
+.special_menu hr{
+    width: 10%;
+    border: solid 1px #aed8ff;
+    margin: 20px 0;
+}
+.special_menu button{
+    border: solid 1px #aed8ff;
+    text-transform: uppercase;
+    background-color: #fff;
+    padding: 5px 15px;
+    font-size: 13px;
+    cursor: pointer;
+}
+@media screen and (max-width: 800px){
+    #special_menu{
+        display: flex;
+    }
+    #special_menu img{
+        width: 60%;
+        flex: 1;
+    }
+    .special_menu{
+        width: 40%;
+        min-width: auto;
+        position: inherit;
+        right: 0;
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    } 
+    .special_menu hr{
+        width: 100%;
+    }
+}
+@media screen and (max-width: 600px){
+    header p:first-child{
+        font-size: 40px;
+    }
+    .products,
+    .about_us{
+        flex-direction: column;
+    }
+    .products article:nth-child(2){
+        margin: 0;
+    }
+    .products article{
+        margin: 20px 0;
+    }
+    #special_menu{
+        flex-direction: column;
+    }
+    #special_menu img,
+    .special_menu{
+        width: auto;
+    }
 }
