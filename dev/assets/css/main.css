@@ -1,0 +1,94 @@
+@font-face {
+    font-family: "LiberationSans-Regular";
+    src: url("../fonts/LiberationSans-Regular.ttf");
+}
+*{
+    box-sizing: border-box;
+    font-family: "LiberationSans-Regular", Arial, Helvetica;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+main{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.background_header_image{
+    width: 100%;
+    height: 80vh;
+    padding: 15px 10% 0;
+    background-color: lightblue;
+    background-image: url("../imgs/header.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+.background_header_image h4{
+    color: #fff;
+    text-transform: uppercase;
+    margin: 0;
+}
+header{
+    width: 80%;
+    background-color: #fff;
+    text-align: center;
+    padding: 30px;
+    position: absolute;
+    bottom: calc(0% - 72.5px);
+}
+header p:first-child{
+    color: #28d3db;
+    font-size: 50px;
+    font-weight: 600;
+    margin: 0 0 10px;
+}
+header p:last-child{
+    font-size: 13px;
+    margin: 0;
+}
+#first_section{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 72.5px 10% 20px;
+    background: linear-gradient(#aed8ff,#fdeaf4);
+}
+.products,
+.about_us{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px 0 0;
+    flex-direction: row;
+}
+.products article{
+    background-color: #fff;
+    flex: 1;
+    margin: 0;
+    padding: 30px 20px;
+    text-align: center;
+}
+.products article:nth-child(2){
+    margin: 0 20px;
+}
+.products article .product_icon{
+    width: 30px;
+}
+p{
+    font-size: 13px;
+    line-height: 1.7;
+}
+.about_us{
+    background-color: #fff;
+    padding: 30px 20px;
+    align-items: center;
+}
+.about_us aside{
+    flex: 1;
+}
+.about_us article{
+    flex: 2;
+}
